@@ -32,21 +32,27 @@ body {
 
 .main {
   @include flexCenter(row);
-  width: 80%;
+  width: 80% - 0.1%;
   margin: 0 auto;
-  #{&}_paragraph {
+  #{&}_paragraph_1 {
     font-weight: weight(regular);
 
     &:hover {
       color: blue;
     }
   }
-
-  .light {
-    @include theme($light-theme: true);
+  #{&}_paragraph_2 {
+    @extend .main_paragraph_1;
+    &:hover {
+      color: $accent-color;
+    }
   }
 
   @include mobile {
     flex-direction: column;
   }
+}
+
+.light {
+  @include theme($light-theme: true);
 }

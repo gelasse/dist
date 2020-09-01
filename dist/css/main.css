@@ -6,8 +6,8 @@
 }
 
 body {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
 }
 
 .main {
@@ -24,21 +24,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80%;
+  width: 79.9%;
   margin: 0 auto;
 }
 
-.main .main_paragraph {
+.main .main_paragraph_1, .main .main_paragraph_2 {
   font-weight: 400;
 }
 
-.main .main_paragraph:hover {
+.main .main_paragraph_1:hover, .main .main_paragraph_2:hover {
   color: blue;
 }
 
-.main .light {
-  background: white;
-  color: black;
+.main .main_paragraph_2:hover {
+  color: green;
 }
 
 @media (max-width: 800px) {
@@ -48,5 +47,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.light {
+  background: white;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
